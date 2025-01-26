@@ -1,1 +1,3 @@
-# portfolio
+# Portfolio
+
+Just my personal page :)
