@@ -54,7 +54,7 @@ export function Projects() {
       title: "FPL Point Prediction",
       description: "Webpage with points predictions for the game of Fantasy Premier League Football (FPL) using Machine Learning",
       technologies: ["Python", "Typescript"],
-      image: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-thumbnail.jpeg"
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/fpl-prediction-thumbnail.jpeg"
     }
   ];
 
