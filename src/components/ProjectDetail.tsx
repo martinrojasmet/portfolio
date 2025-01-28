@@ -34,33 +34,29 @@ The results are displayed on a simple webpage featuring an interactive graph of 
     <div className="space-y-8">
             <button
         onClick={onBack}
-        className="flex items-center gap-2 text-blue-700 hover:text-blue-800 mb-6"
+        className="flex items-center gap-2 text-primary hover:scale-[1.03] cursor-pointer transition-transform bg-secondary p-2 rounded-full"
       >
         <ArrowLeft size={20} />
         Back to Projects
       </button>
 
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-64 object-cover rounded-lg shadow-lg mb-8"
-      />
       <div className="px-[3%]">
 
       <div className="space-y-6">
-        <h1 className="text-3xl font-bold text-gray-800">{project.title}</h1>
+        <h1 className="text-4xl font-bold text-title_text">{project.title}</h1>
 
         <div className="prose max-w-none">
-          <p className="text-gray-600 whitespace-pre-wrap">{project.longDescription}</p>
+          <p className="text-primary_text whitespace-pre-wrap font-light text-justify">{project.longDescription}</p>
+          <br />
         </div>
         <div className='flex'>
           <div className='w-[70%]'>
-            <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
+            <h2 className="text-2xl font-medium mb-4">Technologies Used</h2>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  className="px-3 py-1 bg-secondary bg-opacity-20 text-secondary rounded-full text-sm font-medium"
                 >
                   {tech}
                 </span>
@@ -72,15 +68,16 @@ The results are displayed on a simple webpage featuring an interactive graph of 
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 h-9"
+            className="flex items-center gap-1 px-4 py-2 bg-gradient-to-b from-github  to-github2 text-primary rounded-lg hover:scale-[1.03] h-9 font-bold text-xs md:gap-2 md:text-base"
           >
             <Github size={20} />
-            View Code
+            Code
           </a>
         </div>
         </div>
 
         <img src={project.example} alt="Example of the project" className='w-[80%] mx-auto rounded-lg shadow-xl'/>
+        <br />
       </div>
       </div>
     </div>

@@ -14,12 +14,12 @@ function App() {
       case 'About Me':
         return <AboutMe />;
       default:
-        return <Projects />;
+        return <AboutMe />;
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-bg_primary flex flex-col">
       <Header currentPage={currentPage} onPageChange={setCurrentPage} />
       <main className="container mx-auto px-4 py-8 max-w-7xl flex-grow">
         {renderContent()}
