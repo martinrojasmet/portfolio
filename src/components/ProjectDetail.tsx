@@ -18,7 +18,7 @@ After cleaning and merging the official FPL data with Understat’s metrics, I d
 The results are displayed on a simple webpage featuring an interactive graph of the player’s performance history and predicted points, as well as the basic details like the player name and opponent. As I gain more experience and find time to do it, I plan to refine the model’s accuracy and add new features.
 `,
       technologies: ["Python", "Typescript", "Pytorch", "Flask", "React"],
-      image: "https://github.com/martinrojasmet/portfolio/raw/main/fpl-prediction-thumbnail.jpeg",
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
       githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
       example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction.gif"
     }

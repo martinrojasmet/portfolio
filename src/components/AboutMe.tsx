@@ -5,64 +5,6 @@ export function AboutMe() {
   return (
     <div className="space-y-8 md:px-[5%]">
       <div className="md:p-8">
-        {/* <div className="max-w-full">
-          <div className="flex gap-8 mx-auto">
-            <img
-              src="https://github.com/martinrojasmet/portfolio/raw/main/profile-pic.png"
-              alt="Profile pic"
-              className="h-64 mb-4"
-            />
-            <div>
-              <h1 className=''>Hello.</h1>
-              <h1 className=''>I'm Martin</h1>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="flex items-center justify-center p-4">
-          <div className="max-w-full">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-5 mx-auto">
-              <div className="md:order-1 order-2">
-                <h1 className='text-6xl md:text-8xl leading-tight font-bold'>
-                  <span className="block">Hello.</span>
-                  <span className="block">I'm Martin.</span>
-                </h1>
-                <h2 className='text-xl md:text-3xl leading-tight font-bold text-black'>Systems Engineer</h2>
-              </div>
-              
-              <div className="md:order-2 order-1">
-                <img
-                  src="https://github.com/raw/main/profile-pic.png"
-                  alt="Profile pic"
-                  className="h-48 md:h-64"
-                />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="flex items-center justify-center p-4">
-          <div className="max-w-full w-full">
-            <div className="flex flex-col md:flex-row items-center justify-center mx-auto relative md:gap-5">
-
-              <div className="md:order-2 order-1 absolute inset-0 flex flex-col items-center justify-center md:static z-10">
-                <h1 className='text-6xl md:text-9xl leading-tight font-bold text-center'>
-                  <span className="block">Hello.</span>
-                  <span className="block">I'm Martin</span>
-                </h1>
-              </div>
-              
-              <div className="md:order-1 order-2 flex-shrink-0 relative z-0 w-full md:w-auto">
-                <img
-                  src="https://github.com/martinrojasmet/portfolio/raw/main/profile-pic.png"
-                  alt="Profile pic"
-                  className="h-48 md:h-64 w-full object-contain md:w-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div className="flex items-center justify-center p-2 md:p-4 md:pb-9">
           <div className="max-w-full w-full">
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 border-b border-slate-300">
@@ -78,7 +20,7 @@ export function AboutMe() {
               {/* Image Section - Second on mobile */}
               <div className="order-2 md:order-1 flex-shrink-0">
                 <img
-                  src="https://github.com/martinrojasmet/portfolio/raw/main/profile-pic.png"
+                  src="https://github.com/martinrojasmet/portfolio/raw/main/src/assets/profile-pic.png"
                   alt="Profile pic"
                   className="h-48 md:h-64 w-auto object-contain"
                 />
