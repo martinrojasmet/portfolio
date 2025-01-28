@@ -5,7 +5,7 @@ import { Projects } from './components/Projects';
 import { AboutMe } from './components/AboutMe';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Projects');
+  const [currentPage, setCurrentPage] = useState('About Me');
 
   const renderContent = () => {
     switch (currentPage) {
