@@ -50,11 +50,18 @@ export function Projects() {
 
   const projects = [
     {
-      id: "ai-task-manager",
+      id: "fpl-point_prediction",
       title: "FPL Point Prediction",
       description: "Webpage with points predictions for the game of Fantasy Premier League Football (FPL) using Machine Learning",
       technologies: ["Python", "Typescript"],
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg"
+    },
+    {
+      id: "gRIF",
+      title: "gRIF",
+      description: "Python-based application for bulk querying tax contributions in Venezuela",
+      technologies: ["Python"],
+      image: "https://github.com/martinrojasmet/gRIF/raw/main/src/assets/gRIF-desktop.png"
     }
   ];
 

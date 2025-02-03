@@ -8,7 +8,7 @@ type ProjectDetailProps = {
 
 export function ProjectDetail({ id, onBack }: ProjectDetailProps) {
   const projects = {
-    'ai-task-manager': {
+    'fpl-point-prediction': {
       title: "FPL Point Prediction",
       description: "A smart task management application that uses machine learning to prioritize and categorize tasks automatically. The system learns from user behavior to suggest task organization and deadlines.",
       longDescription: `This is a fun project I’ve wanted to tackle for a while: a Fantasy Premier League (FPL) prediction system. My goal was to build as much of an end-to-end solution as I could, but I don’t think I am capable of tracking and calculating the stats from the actual match videos yet; hopefully pretty soon I'll be able to. I started with the data provided by vaastav in his repository as a foundation, since I wasn’t sure where else to access the historic official FPL game data. To address gaps in expected goals (xG) and expected assists (xA) data for seasons prior to 2022-23, I complemented the dataset by scraping understat.com.
@@ -21,6 +21,18 @@ The results are displayed on a simple webpage featuring an interactive graph of 
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
       githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
       example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction.gif"
+    },
+    'gRIF': {
+      title: "gRIF",
+      description: "Python-based application for bulk querying tax contributions in Venezuela",
+      longDescription: `In Venezuela, individuals and companies with economic activity are assigned a unique identification number (RIF). Retrieving tax contribution records for these entities requires manual queries through the SENIAT website, a time-consuming process when handling multiple entries. gRIF (short for "get RIF") was created to automate this after a request from a relative to simplify bulk queries for frequent users.
+
+This tool combines Playwright (for browser automation), EasyOCR (for CAPTCHA solving), and Tkinter (for interface design) to enable efficient mass queries via a desktop interface. Designed for Venezuelan users in mind, gRIF is handled with a common and familiar tool in Excel, also allowing the seamless copy-paste between spreadsheets, reducing the repetitive and manual effort involved.
+`,
+      technologies: ["Python", "Playwright", "EasyOCR", "Tkinter"],
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
+      githubUrl: "https://github.com/martinrojasmet/gRIF",
+      example: "https://github.com/martinrojasmet/gRIF/raw/main/utils/gRIF.png"
     }
   };
 
