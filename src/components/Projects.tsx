@@ -50,7 +50,7 @@ export function Projects() {
 
   const projects = [
     {
-      id: "fpl-point_prediction",
+      id: "fpl-point-prediction",
       title: "FPL Point Prediction",
       description: "Webpage with points predictions for the game of Fantasy Premier League Football (FPL) using Machine Learning",
       technologies: ["Python", "Typescript"],
