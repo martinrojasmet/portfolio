@@ -61,7 +61,7 @@ export function Projects() {
       title: "gRIF",
       description: "Python-based application for bulk querying tax contributions in Venezuela",
       technologies: ["Python"],
-      image: "https://github.com/martinrojasmet/gRIF/raw/main/src/assets/gRIF-desktop.png"
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/gRIF-desktop.png"
     }
   ];
 
