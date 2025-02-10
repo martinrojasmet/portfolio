@@ -61,7 +61,7 @@ export function Projects() {
       title: "FPL Game PPrediction",
       description: "Webpage with games predictions for Premier League using Machine Learning",
       technologies: ["Python", "Typescript"],
-      image: "./src/assets/premier-league.png"
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/premier-league.png"
     },
     {
       id: "gRIF",
