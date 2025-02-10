@@ -57,6 +57,13 @@ export function Projects() {
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg"
     },
     {
+      id: "fpl-game-prediction",
+      title: "FPL Game PPrediction",
+      description: "Webpage with games predictions for Premier League using Machine Learning",
+      technologies: ["Python", "Typescript"],
+      image: "./src/assets/premier-league.png"
+    },
+    {
       id: "gRIF",
       title: "gRIF",
       description: "Python-based application for bulk querying tax contributions in Venezuela",

@@ -15,12 +15,12 @@ export function ProjectDetail({ id, onBack }: ProjectDetailProps) {
 
 After cleaning and merging the official FPL data with Understat’s metrics, I developed a model to predict players’ points for the upcoming gameweek. The predictions factor in the player’s historical performance and their track record against specific opponents. I used XGBoost and Linear Regression algorithms to generate these forecasts.
 
-The results are displayed on a simple webpage featuring an interactive graph of the player’s performance history and predicted points, as well as the basic details like the player name and opponent. As I gain more experience and find time to do it, I plan to refine the model’s accuracy and add new features.
+The results are displayed on a simple webpage featuring an interactive graph of the player’s performance history and predicted points, as well as the basic details like the player name and opponent. I hope the data I gathered and merged can be useful to you, in any projects you may undertake. As I gain more experience and time, I plan to refine the model’s accuracy, add new features, and experiment with different methods to improve its performance.
 `,
       technologies: ["Python", "Typescript", "Pytorch", "Flask", "React"],
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
       githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
-      example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction.gif"
+      example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-points.gif"
     },
     'gRIF': {
       title: "gRIF",
@@ -33,6 +33,20 @@ This tool combines Playwright (for browser automation), EasyOCR (for CAPTCHA sol
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
       githubUrl: "https://github.com/martinrojasmet/gRIF",
       example: "https://github.com/martinrojasmet/gRIF/raw/main/utils/gRIF.png"
+    },
+    'fpl-game-prediction': {
+      title: "FPL Game Prediction",
+      description: "A smart task management application that uses machine learning to prioritize and categorize tasks automatically. The system learns from user behavior to suggest task organization and deadlines.",
+      longDescription: `This is a fun project I’ve wanted to tackle for a while: a Fantasy Premier League (FPL) prediction system. My goal was to build as much of an end-to-end solution as I could, but I don’t think I am capable of tracking and calculating the stats from the actual match videos yet; hopefully pretty soon I'll be able to. I scraped the data from understat.com.
+
+With Understat’s metrics, I developed a game winner prediction model for the upcoming gameweek based on team statistics. The model utilizes an XGBoost Classifier and Rolling Averages to generate predictions.
+
+The winner predictions are presented in a straightforward format, with the winner highlighted in green and a tie in gray.
+`,
+      technologies: ["Python", "Typescript", "Pytorch", "Flask", "React"],
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
+      githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
+      example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-games.png"
     }
   };
 
