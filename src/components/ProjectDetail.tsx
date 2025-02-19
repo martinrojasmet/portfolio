@@ -17,7 +17,7 @@ After cleaning and merging the official FPL data with Understat’s metrics, I d
 
 The results are displayed on a simple webpage featuring an interactive graph of the player’s performance history and predicted points, as well as the basic details like the player name and opponent. I hope the data I gathered and merged can be useful to you, in any projects you may undertake. As I gain more experience and time, I plan to refine the model’s accuracy, add new features, and experiment with different methods to improve its performance.
 `,
-      technologies: ["Python", "Typescript", "Pytorch", "Flask", "React"],
+      technologies: ["Python", "Typescript", "Flask", "React"],
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
       githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
       example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-points.gif"
@@ -43,7 +43,7 @@ With Understat’s metrics, I developed a game winner prediction model for the u
 
 The winner predictions are presented in a straightforward format, with the winner highlighted in green and a tie in gray.
 `,
-      technologies: ["Python", "Typescript", "Pytorch", "Flask", "React"],
+      technologies: ["Python", "Typescript", "Flask", "React"],
       image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
       githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
       example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-games.png"
