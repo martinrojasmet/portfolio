@@ -45,6 +45,10 @@ export function AboutMe() {
           </p>
         </div>
 
+        <div className='flex items-center justify-center my-10'>
+          <a href='https://clustrmaps.com/site/1c4q2'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=a6a9ad&w=400&t=m&d=MDqeY9AJgmGTyAv10twX2NJhpwV-CWJr3sCvAhB-2og&co=eef2f8&ct=7e8083'/></a>
+        </div>
+
       </div>
     </div>
   );
