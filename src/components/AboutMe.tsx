@@ -1,5 +1,4 @@
 import React from 'react';
-import { BookOpen, Coffee, Code, Heart } from 'lucide-react';
 
 export function AboutMe() {
   return (
@@ -14,7 +13,7 @@ export function AboutMe() {
                   <span className="block">Hello.</span>
                   <span className="block">I'm <span className='gradient-text'>Martin</span>.</span>
                 </h1>
-                <h2 className='text-xl lg:text-3xl leading-tight text-slate-600 text-primary_text'>Systems Engineer</h2>
+                <h2 className='text-xl lg:text-3xl leading-tight text-slate-600 text-primary_text'>Systems Engineer & EMSSE Student</h2>
               </div>
               
               {/* Image Section - Second on mobile */}
@@ -31,24 +30,16 @@ export function AboutMe() {
 
         <div className="prose max-w-none text-primary_text text-justify font-light pt-7 md:pt-0">
           <p className="mb-4">
-            I'm driven to improve people's lives through the use of technology 
-            and optimization. I enjoy math and challenging myself with complex problems. 
-            Looking to learn and grow, one step at a time. And, deeply committed to protecting 
-            our planet, with the goal to contribute to sustainability and the enviroment through 
-            my apps.
+            Systems Engineer & Master’s Student in Sustainable Systems Engineering, driven to build efficient, data-led 
+            technology that makes a real impact. I enjoy challenging myself with complex problems. Looking to learn and 
+            grow, one step at a time.
           </p>
           
           <p>
-            This is a page in which I will be uploading the side-projects I do. I figured it would be a way 
-            to keep myself motivated to do more in the future. Maybe in the future I'll add some other sections
-            about myself. I hope you enjoy it.
+            I will be uploading my coding side-projects. Maybe in the future I'll add some extra sections
+            about some other topics. I hope you enjoy it :)
           </p>
         </div>
-
-        <div className='flex items-center justify-center my-10'>
-          <a href='https://clustrmaps.com/site/1c4q2'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=a6a9ad&w=400&t=m&d=MDqeY9AJgmGTyAv10twX2NJhpwV-CWJr3sCvAhB-2og&co=eef2f8&ct=7e8083'/></a>
-        </div>
-
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-4xl font-extrabold">Martin Rojas</h1>
+            <h1 className="text-4xl font-semibold">Martin Rojas</h1>
           </div>
           <nav className="flex gap-4">
             {pages.map((page) => (

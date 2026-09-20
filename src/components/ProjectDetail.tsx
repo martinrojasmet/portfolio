@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Github, ExternalLink, Calendar, Users, Wrench } from 'lucide-react';
+import { ArrowLeft, Github } from 'lucide-react';
 
 type ProjectDetailProps = {
   id: string;
@@ -8,45 +8,16 @@ type ProjectDetailProps = {
 
 export function ProjectDetail({ id, onBack }: ProjectDetailProps) {
   const projects = {
-    'fpl-point-prediction': {
-      title: "FPL Point Prediction",
-      description: "A smart task management application that uses machine learning to prioritize and categorize tasks automatically. The system learns from user behavior to suggest task organization and deadlines.",
-      longDescription: `This is a fun project I’ve wanted to tackle for a while: a Fantasy Premier League (FPL) prediction system. My goal was to build as much of an end-to-end solution as I could, but I don’t think I am capable of tracking and calculating the stats from the actual match videos yet; hopefully pretty soon I'll be able to. I started with the data provided by vaastav in his repository as a foundation, since I wasn’t sure where else to access the historic official FPL game data. To address gaps in expected goals (xG) and expected assists (xA) data for seasons prior to 2022-23, I complemented the dataset by scraping understat.com.
+    'fpl-analytics-engine': {
+      title: "FPL Analytics Engine",
+      description: "Automated, containerized data pipeline integrating live FPL API data with understat.com metrics, feeding predictive model.",
+      longDescription: `The Fantasy Premier League (FPL) Analytics Engine is an end-to-end data engineering pipeline designed to automate the extraction, integration, and modeling of multi-source football data. To address a key statistical gap in the official FPL API: historical expected goals (xG) and expected assists (xA) prior to 2023. The system automatically ingests match and player data from understat.com alongside official FPL endpoints. Containerized entirely using Docker and managed via DevContainers, the pipeline utilizes Apache Airflow to orchestrate daily ETL workflows, managing data extraction, raw staging, and schema harmonization within a PostgreSQL target database.
 
-After cleaning and merging the official FPL data with Understat’s metrics, I developed a model to predict players’ points for the upcoming gameweek. The predictions factor in the player’s historical performance and their track record against specific opponents. I used XGBoost and Linear Regression algorithms to generate these forecasts.
-
-The results are displayed on a simple webpage featuring an interactive graph of the player’s performance history and predicted points, as well as the basic details like the player name and opponent. I hope the data I gathered and merged can be useful to you, in any projects you may undertake. As I gain more experience and time, I plan to refine the model’s accuracy, add new features, and experiment with different methods to improve its performance.
-`,
-      technologies: ["Python", "Typescript", "Flask", "React"],
-      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
-      githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
-      example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-points.gif"
-    },
-    'gRIF': {
-      title: "gRIF",
-      description: "Python-based application for bulk querying tax contributions in Venezuela",
-      longDescription: `In Venezuela, individuals and companies with economic activity are assigned a unique identification number (RIF). Retrieving tax contribution records for these entities requires manual queries through the SENIAT website, a time-consuming process when handling multiple entries. gRIF (short for "get RIF") was created to automate this after a request from a relative to simplify bulk queries for frequent users.
-
-This tool combines Playwright (for browser automation), EasyOCR (for CAPTCHA solving), and Tkinter (for interface design) to enable efficient mass queries via a desktop interface. Designed for Venezuelan users in mind, gRIF is handled with a common and familiar tool in Excel, also allowing the seamless copy-paste between spreadsheets, reducing the repetitive and manual effort involved.
-`,
-      technologies: ["Python", "Playwright", "EasyOCR", "Tkinter"],
-      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
-      githubUrl: "https://github.com/martinrojasmet/gRIF",
-      example: "https://github.com/martinrojasmet/gRIF/raw/main/utils/gRIF.png"
-    },
-    'fpl-game-prediction': {
-      title: "FPL Game Prediction",
-      description: "A smart task management application that uses machine learning to prioritize and categorize tasks automatically. The system learns from user behavior to suggest task organization and deadlines.",
-      longDescription: `This is a fun project I’ve wanted to tackle for a while: a Fantasy Premier League (FPL) prediction system. My goal was to build as much of an end-to-end solution as I could, but I don’t think I am capable of tracking and calculating the stats from the actual match videos yet; hopefully pretty soon I'll be able to. I scraped the data from understat.com.
-
-With Understat’s metrics, I developed a game winner prediction model for the upcoming gameweek based on team statistics. The model utilizes an XGBoost Classifier and Rolling Averages to generate predictions.
-
-The winner predictions are presented in a straightforward format, with the winner highlighted in green and a tie in gray.
-`,
-      technologies: ["Python", "Typescript", "Flask", "React"],
-      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-prediction-thumbnail.jpeg",
-      githubUrl: "https://github.com/martinrojasmet/fpl-prediction",
-      example: "https://github.com/martinrojasmet/fpl-prediction/raw/main/fpl-prediction-games.png"
+To solve complex entity resolution challenges stemming from mismatched player naming conventions and changing team affiliations across disparate sources, the integration layer pairs fuzzy string matching algorithms with Google AI Studio LLMs. This hybrid approach automates cross-source record linkage with high accuracy, eliminating manual mapping. Once integrated, dbt handles downstream data transformation, modular data modeling, and optimized analytical views. The resulting schema feeds a baseline points prediction model, serving as a production-ready data foundation for future machine learning enhancements and web-facing dashboard deployment.`,
+      technologies: ["Docker", "Python", "Airflow", "dbt", "Google AI", "Postgres"],
+      image: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/premier-league.png",
+      githubUrl: "https://github.com/martinrojasmet/fpl_project",
+      example: "https://github.com/martinrojasmet/portfolio/raw/main/src/assets/fpl-analytics-engine.png"
     }
   };
 
