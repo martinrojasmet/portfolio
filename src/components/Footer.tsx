@@ -9,7 +9,7 @@ export function Footer() {
 
           <div className="flex items-center gap-2">
             <Mail size={18} />
-              martinrojasa at outlook.com
+              martin.rojas.career at gmail.com
           </div>
           <div className="flex gap-4">
             <a href="https://github.com/martinrojasmet/" className="hover:text-github" aria-label="GitHub">
