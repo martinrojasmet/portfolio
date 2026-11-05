@@ -65,7 +65,7 @@ To solve complex entity resolution challenges stemming from mismatched player na
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 px-4 py-2 bg-gradient-to-b from-github  to-github2 text-primary rounded-lg hover:scale-[1.03] h-9 font-bold text-xs md:gap-2 md:text-base"
+            className="flex items-center gap-2 px-4 py-2 bg-white border border-secondary text-secondary rounded-lg hover:scale-[1.03] h-9 font-bold text-xs md:gap-2 md:text-base shadow-sm transition-colors"
           >
             <Github size={20} />
             Code
